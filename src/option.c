@@ -8555,10 +8555,10 @@ set_num_option(opt_idx, varp, value, errbuf, errbuflen, opt_flags)
 	    errmsg = e_positive;
 	    curwin->w_p_nuw = 1;
 	}
-	if (curwin->w_p_nuw > 10)
+	if (curwin->w_p_nuw > 11)
 	{
 	    errmsg = e_invarg;
-	    curwin->w_p_nuw = 10;
+	    curwin->w_p_nuw = 11;
 	}
 	curwin->w_nrwidth_line_count = 0;
     }
